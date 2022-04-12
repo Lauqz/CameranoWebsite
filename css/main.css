@@ -1,0 +1,511 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*My CSS*/
+@font-face {
+    font-family: "My Font";
+    src: url("font/Couriernew.ttf") format("truetype");
+}
+
+html{
+	scroll-padding-top: 70px;
+}
+
+body {
+	overflow-y: visible;
+    overflow-x: hidden;
+    line-height: 1;
+	background-color: white;
+	margin: 0;
+	padding-top:80px;
+}
+
+.container {
+	transition: 0.5s;
+	font-family: 'My font', Courier, monospace;
+	width: 62%;
+	max-width: 95%;
+	margin: 0 auto;
+	height: auto;
+}
+
+.centered{
+	transition: 0.5s;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+
+.logo{
+	transition: 0.5s;
+	align-items: center;
+	width: 200px;
+	margin: auto !important;
+    text-align: center;
+	padding-top:10px;
+}
+
+.button{
+	transition: 0.5s;
+	visibility: hidden;
+}
+
+.button1{
+	transition: 0.5s;
+	visibility: hidden;
+}
+
+#arrow{
+	cursor: pointer;
+	transition: 0.5s;
+	visibility: hidden;
+	width: 39px;
+}
+
+#arrow:hover{
+	transition: 0.4s;
+	transform: scale(1.2);
+}
+
+#arrow1{
+	cursor: pointer;
+	transition: 0.5s;
+	visibility: hidden;
+	width: 39px;
+}
+
+#arrow1:hover{
+	transition: 0.4s;
+	transform: scale(1.3);
+}
+
+.navcontainer{
+	overflow: hidden;
+	height: 190px;
+	transition: 0.5s; /* Adds a transition effect when the padding is decreased */
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: white;
+	width: 100%;
+	z-index: 99;
+}
+
+.navbar-nav{
+	transition: 0.4s;
+	padding-bottom: 20px;
+	margin: 20px;
+	width: 100%;
+}
+
+.navbar{
+	transition: 0.4s;
+	float:left;
+	width: 25%;
+	min-width: 10%;
+}
+
+.navbar>a{
+	transition: 0.4s;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar:hover{
+	transition: 0.4s;
+	transform: scale(1.2);
+}
+
+.vid{
+	position: static;
+}
+
+.vid>.cam{
+	margin-bottom: 50px;
+   	width: 100%;
+   	height: 100%;
+}
+
+.vid>.full{
+	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+.big{
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.gro{
+	margin-top: 50px;
+	width: 100%;
+}
+
+.row{
+	height: 100%;
+}
+
+.cell{
+	width: 25%;	
+	padding: 10px;
+}
+
+.cell:hover{
+	transition: 0.5s;
+	transform: scale(1.1);
+}
+
+.grotta{
+	max-width: 100%;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	background-color: aquamarine;
+	border-radius: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 2;
+}
+
+.nome{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-left: 10vh;
+	float:left;
+}
+
+.email{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-right: 10vh;
+	float: right;
+}
+
+#name{
+	background-color:rgb(192,255,233);
+	border: none;
+	height: 3.5vh;
+	font-family: 'Courier New', Courier, monospace;
+	border-radius: 10px;
+	outline: none;
+}
+
+#email{
+	background-color: rgb(192,255,233);
+	border: none;
+	height: 3.5vh;
+	font-family: 'Courier New', Courier, monospace;
+	border-radius: 10px;
+	outline: none;
+}
+
+#topic{
+	padding: 1%;
+	background-color: rgb(192,255,233);
+	border: none;
+	border-radius: 10px;
+	height: 4.5vh;
+	font-family: 'Courier New', Courier, monospace;
+	min-width: 50%;
+	max-width: 90%;
+	outline: none;
+	transition: 0.3s;
+}
+
+#text{
+	padding: 1.5%;
+	background-color: rgb(192,255,233);
+	border: none;
+	border-radius: 10px;
+	line-height: 1.5;
+	font-family: 'Courier New', Courier, monospace;
+	max-width: 90%;
+	outline: none;
+}
+
+#submit{
+	color: white;
+	background-color: black;
+	height: 4vh;
+	border-radius: 20px;
+	border: none;
+	width: 12vh;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+}
+
+#submit:hover{
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+
+#reset{
+	color:white;
+	background-color: black;
+	height: 4vh;
+	border-radius: 20px;
+	border: none;
+	width: 12vh;
+	font-family: 'Courier New', Courier, monospace;
+	cursor: pointer;
+}
+
+#reset:hover{
+	transition: 0.3s;
+	transform: scale(1.2);
+}
+
+.topic{
+	min-width: 100%;
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+	text-align: center;
+}
+
+.text{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	text-align: center;
+}
+
+.sub{
+	margin-bottom: 3vh;
+	margin-left: 15vh;
+	float:left;
+}
+
+.res{
+	margin-bottom: 3vh;
+	margin-right: 15vh;
+	float: right;
+}
+
+footer {
+	width: 100%;
+	height: 110px;
+	margin-top:100px;
+	margin-bottom: 0 auto;
+	background: linear-gradient(white, #dadada);
+	text-align: center;
+}
+
+.socials{
+	margin: 10px;
+	width: 100%;
+}
+
+.soc{
+	float:left;
+	width: 33%;
+}
+
+.soc:hover{
+	transition: 0.4s;
+	transform: scale(1.2);
+}
+
+.simg{
+	width: 32px;
+	border-radius: 30%;
+}
+
+.copyright{
+	font-weight: 550;
+}
+
+.contatti{
+	list-style:disc;
+	list-style-position: outside;
+	line-height: 1.6;
+	padding-left: 1em;
+}
+
+strong{
+	font-weight:bold;
+}
+
+dfn::after {
+	content: attr(data-info);
+	text-align: center;
+	display: block;
+	position: relative;
+	margin: auto;
+	top: 50px;
+	opacity: 0;
+	width: 80%;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.5em;
+	padding: 0.5em 0.8em;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	pointer-events: none; /* This prevents the box from apearing when hovered. */
+	transition: opacity 250ms, top 250ms;
+}
+
+dfn:hover::after {
+	opacity: 1;
+}
+
+dfn:hover::after {
+	top: 8px;
+}
+
+
+/*Responsive*/
+@media screen and (max-width: 1035px) {
+	.big{
+		margin: 0 10px;
+	}
+
+	.copyright{
+		margin: 0 10px;
+	}
+
+	.simg{
+		width: 20px;
+	}
+
+	.navbar-nav{
+		visibility: hidden;
+	}
+	
+	.navcontainer{
+		height: 100px;
+		display: flex;
+	}
+
+	#arrow{
+		width: 35px;
+		position: absolute;
+		top: 30px;
+		right: 45px;
+		visibility: visible;
+	}
+
+	.button1{
+		display: inline-flex;
+	}
+
+	#arrow1{
+		width: 35px;
+		position: absolute;
+		top: 30px;
+		right: 45px;
+		visibility: hidden;
+	}
+
+	.container{
+		width: 75%;
+	}
+
+	.button{
+		display: inline-flex;
+	}
+
+	.logo{
+		width: 145px;
+		position: relative;
+		float: left;
+		left: 20%;
+		margin: 0;
+	}
+
+	.nome{
+		margin-top: 3vh;
+		margin-bottom: 3vh;
+		margin-left: 0;
+		text-align: center;
+		float:none;
+	}
+	
+	.email{
+		margin-top: 3vh;
+		margin-bottom: 0;
+		margin-right: 0;
+		text-align: center;
+		float: none;
+	}
+
+	.topic{
+		margin-top: 0;
+	}
+
+	.sub{
+		margin-left: 10vh;
+	}
+	
+	.gro{
+		margin: 50px auto;
+		width: 80%;
+	}
+
+	.res{
+		margin-right: 10vh;
+	}
+
+	.row{
+		display: table;
+		margin: 0 auto;
+	}
+
+	.cell{
+		display: table-row;
+		text-align: center;
+		height: 64vh;
+	}
+
+	.grotta{
+		max-height: 50vh;
+	}
+}
